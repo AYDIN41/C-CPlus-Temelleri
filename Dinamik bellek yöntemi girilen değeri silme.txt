@@ -1,0 +1,17 @@
+#include <iostream>
+#include <string.h>
+#include <stdlib.h>
+#include <time.h>
+
+using namespace std;
+
+int main()
+{
+    int *adres = new int;
+    *adres = 10;
+    cout << *adres << endl;
+
+    delete adres;
+    adres = nullptr;
+        //cout << *adres << endl;
+}

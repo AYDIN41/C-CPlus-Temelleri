@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float kupunbirkenari;
+    float kupunyanalalanlartoplami;
+    float kupunhacmi;
+
+    cout<< "Lutfen kupun bir kenarini giriniz.." << endl;
+    cin >> kupunbirkenari;
+    kupunyanalalanlartoplami = 6 * kupunbirkenari * kupunbirkenari;
+    kupunhacmi = kupunbirkenari * kupunbirkenari * kupunbirkenari;
+    cout << "Kupun yanal alanlar toplami: " << kupunyanalalanlartoplami << endl  << "Kupun hacmi: " << kupunhacmi << endl;
+}

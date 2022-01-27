@@ -1,0 +1,18 @@
+#include <iostream>
+#include <string.h>
+
+using namespace std;
+
+void stringDiziKesme(const string *dizi1){
+    const string *gecicidizi = dizi1;
+    for(;dizi1 != (gecicidizi+3);dizi1++){
+        cout << *dizi1 << endl;
+    }
+}
+
+
+int main()
+{
+        string dizi[] = {"Emirhan","Aydin","41","11"};
+        stringDiziKesme(dizi);
+}

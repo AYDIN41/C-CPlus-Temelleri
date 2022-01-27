@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+  int sayi,sayi2,toplam=0;
+
+  cout << "Lutfen iki sayi arasindaki sayilarin toplamini bulmak icin 2 sayi giriniz..." << endl;
+  cin >> sayi >> sayi2;
+  if(sayi>sayi2){
+    while (sayi>sayi2){
+        //cout << sayi << endl;
+        toplam += sayi;
+        cout << "Aradaki sayilarin toplami: " << toplam << endl;
+        sayi--;
+    }
+  }else{
+    while (sayi2 > sayi){
+        //cout << sayi2 << endl;
+        toplam += sayi2;
+        cout << "Aradaki sayilarin toplami: " << toplam << endl;
+        sayi2--;
+    }
+  }
+  //cout << sayi << " " << sayi2;
+}

@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int tamsayi = 3;
+    int tamsayi2 = 5;
+    double buyukkesirli = 1.4;
+    char isim = 'A';
+    bool anahtar = false;
+    cout << "5 +3: " << tamsayi2 + tamsayi << endl;
+
+   // cout <<"Tamsayi degeri:"<<tamsayi << "  " <<"Kesirli sayi:" << kesirlisayi<< endl << "Karakter: " << isim << endl;
+    return 0;
+}

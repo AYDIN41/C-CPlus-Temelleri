@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string.h>
+#include <stdlib.h>
+#include <time.h>
+
+using namespace std;
+
+int main()
+{
+    int sayi = 0;
+    int *adres2;
+    int *adres = new int [4];
+    for (int i = 0;i<4;i++){
+        sayi += 10;
+        *(adres+i) = sayi;
+    }
+    for (int i = 0;i<4;i++){
+        cout << *(adres+i) << endl;
+    }
+    adres2 = adres;
+    delete [] adres;
+    adres = nullptr;
+    for (int i = 0;i<4;i++){
+        cout << *(adres2+i) << endl;
+    }
+    //cout << *(adres+3) << endl;
+}

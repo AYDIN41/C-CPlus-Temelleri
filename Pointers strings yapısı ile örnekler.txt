@@ -1,0 +1,38 @@
+#include <iostream>
+#include <string.h>
+using namespace std;
+
+int main()
+{
+    string takimlar[] = {"Bayern","Chelsea","Barcelona","Besiktas"};
+    string *takimAdresi = &takimlar[0];
+    for(int i = 0;i<4;i++){
+        cout << *(takimAdresi+i) << endl;
+    }
+
+
+
+
+
+
+
+  /*  string isim;
+    string *isimAdresi;
+    cout << "Lutfen bir isim giriniz..." << endl;
+    cin >> isim;
+    isimAdresi = &isim;
+    cout << *isimAdresi << endl;
+    cout << isimAdresi;
+
+
+
+
+    char isim [50];
+    char *isimAdresi;
+    cout << "Lutfen bir isim giriniz..." << endl;
+    cin >> isim;
+    isimAdresi = isim;
+    for (int i = 0;i<strlen(isim);i++){
+        cout << *(isimAdresi+i);
+    }*/
+}

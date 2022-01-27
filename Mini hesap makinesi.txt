@@ -1,0 +1,49 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   float sayi1,sayi2;
+   float toplama=0,cikarma=0,bolme=0,carpma=0;
+   int islem;
+   cout << "Lutfen yapmak istediginiz islemi seciniz..." << endl;
+   cout << "1 = toplama " << "  " << "2 = cikarma " << "    " << "3 = bolme" << "   " << "4 = carpma" << "  " << "5 =bolme" << endl;
+   cin >> islem;
+   while(islem < 0 || islem >5 ){
+    cout << "Lutfen 1-5 arasi bir sayi giriniz... " << endl;
+    cin >> islem;
+   }
+   cout << "Lutfen 2 sayi giriniz..." << endl;
+   cin >> sayi1 >> sayi2;
+
+   if(islem == 1){
+        toplama = sayi1 + sayi2;
+    cout << "Toplama: " << toplama;
+   }
+   else if (islem == 2){
+    if(sayi1>sayi2){
+        cikarma = sayi1 - sayi2;
+    }else{
+    cikarma = sayi2- sayi1;
+    }
+    cout << "Cikarma: " << cikarma;
+   }
+   else if (islem == 3){
+    if(sayi1>sayi2){
+        bolme = sayi1 / sayi2;
+    }else{
+    bolme = sayi2 / sayi1;
+    }
+    cout << "Bolme: " << bolme;
+   }
+   else if(islem == 4){
+    carpma = sayi1 * sayi2;
+    cout << "Carpma: " << carpma;
+   }else if (islem == 5){
+    cout << "Mod: " << int(sayi1) % int(sayi2);
+   }
+   /*else{
+    cout << "Lutfen 1-5 arasi bir secim yapin..."<< endl;
+   }*/
+}

@@ -1,0 +1,17 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int sayi;
+   cout << "Lutfen pozitif ya da negatif oldugunu ogrenmek istediginiz sayiyi giriniz..." << endl;
+   cin >> sayi;
+   if (sayi > 0){
+    cout << "Girdiginiz sayi pozitif : " << sayi << endl;
+   } else if (sayi == 0){
+        cout << "Girdiginiz sayi notrdur: " << sayi << endl;
+   } else{
+        cout << "Girdiginiz sayi negatifdir: " << sayi << endl;
+   }
+}

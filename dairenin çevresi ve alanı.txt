@@ -1,0 +1,12 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int daireninyaricapi;
+    cout<< "Lutfen dairenin yaricapini giriniz.."<< endl;
+    cin>>daireninyaricapi;
+    cout<<"Dairenin cevresi: " << 2 * 3.14 * daireninyaricapi << "  " << "Dairenin alani: " << 3.14 * daireninyaricapi * daireninyaricapi<< endl;
+
+}

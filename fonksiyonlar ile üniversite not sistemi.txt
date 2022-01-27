@@ -1,0 +1,38 @@
+#include <iostream>
+#include <string.h>
+#include <stdlib.h>
+#include <time.h>
+
+using namespace std;
+
+string harfNotuGosterme(int sayi){
+    if(sayi>90 ){
+        return "AA";
+    }else if(sayi > 75){
+        return "BB";
+    }else if(sayi > 50){
+        return "CC";
+    }else if (sayi >= 0) {
+        return "FF";
+    }else{
+        return "Girdiginiz sayi degeri yanlis lutfen bir daha deneyin";
+    }
+
+
+}
+
+int main()
+{
+    float vize,finalNotu;
+    float ortalama;
+    cout << "Lutfen once vize sonra final notunuzu giriniz..." << endl;
+    cin >> vize >> finalNotu;
+    ortalama = vize * 0.4 + finalNotu * 0.6;
+    while(vize > 100 || finalNotu > 100 && vize < 0 || finalNotu < 0 ){
+        cout << "Girdiginiz sayi degeri yanlis lutfen bir daha deneyin..." <<endl;
+        cin >> vize >> finalNotu;
+        ortalama = vize * 0.4 + finalNotu * 0.6;
+    }
+    cout << "Ortalamaniz: " << ortalama << "\n";
+    cout << "Harf notunuz " << endl << harfNotuGosterme(ortalama);
+}

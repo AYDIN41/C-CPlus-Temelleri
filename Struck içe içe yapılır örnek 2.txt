@@ -1,0 +1,35 @@
+#include <iostream>
+#include <string.h>
+#include <stdlib.h>
+#include <time.h>
+
+using namespace std;
+
+struct Kategori{
+
+    string isim;
+    int urunAdeti;
+};
+
+
+struct Reyonlar{
+    string isim;
+    string acikMi;
+    int urunSayisi;
+    Kategori* kategoriOzellikleri;
+
+};
+
+
+int main()
+{
+    Reyonlar r2;
+    Reyonlar r1 = {"Kasap","Acik",2000};
+    Kategori a = {"Tavuk",1000};
+    r1.kategoriOzellikleri = &a;
+
+    cout << r2.isim<<"  "<< r2.acikMi << endl ;
+    r2 = r1;
+    cout << r2.isim<<"  "<< r2.acikMi << "  "<<r2.urunSayisi << " \n"<< r2.kategoriOzellikleri->isim << "    " << r2.kategoriOzellikleri->urunAdeti << endl ;
+
+}

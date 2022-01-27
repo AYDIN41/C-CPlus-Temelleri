@@ -1,0 +1,33 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int sayi,sayi2;
+    int cifttoplam=0,tektoplam=0;
+    cout<< "Lutfen arasinda tek ve cift sayilarin toplami icin 2 sayi yaziniz..." << endl;
+    cin >> sayi>>sayi2;
+    do{
+        if(sayi>sayi2){
+            if(sayi % 2 == 0){
+                cifttoplam += sayi;
+            }else{
+             tektoplam += sayi;
+            }
+            sayi--;
+        }else{
+            if(sayi2 % 2 == 0){
+                cifttoplam += sayi2;
+            }else{
+                tektoplam += sayi2;
+            }
+            sayi2--;
+        }
+    }while(sayi>sayi2|| sayi2 >sayi);
+    if(sayi > sayi2){
+        cout << "Tek sayilar toplami: " << tektoplam << "   " << "Cift sayilar toplami: " << cifttoplam << endl;
+    }else{
+        cout << "Tek sayilar toplami: " << tektoplam << "   " << "Cift sayilar toplami: " << cifttoplam << endl;
+    }
+}

@@ -1,0 +1,41 @@
+#include <iostream>
+#include <string.h>
+#include <stdlib.h>
+#include <time.h>
+#include <fstream>
+using namespace std;
+
+namespace matematikIslemleri{
+
+    float Pi = 3.14;
+
+    int toplama(int sayi1,int sayi2){
+        return sayi1+sayi2;
+    }
+    float daireninCevresiniHesaplama(float yaricap){
+        return 2*Pi*yaricap;
+    }
+
+}
+
+int main()
+{
+   using namespace matematikIslemleri;
+   int sayi;
+   cout << "Please press the any button for number..." << endl;
+   cin >> sayi;
+   cout << sayi << endl;
+   {
+       int sayi = 2;
+          cout << sayi << endl;
+
+   }
+
+   cout << Pi << endl;
+   cout << toplama(5,150) << endl;
+   cout << daireninCevresiniHesaplama(5) << endl;
+
+    return 0;
+}
+
+

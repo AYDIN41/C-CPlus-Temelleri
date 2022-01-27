@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   float sayi1,sayi2;
+   float toplam = 0, cikarma = 0, carpma = 0, bolme = 0;
+   cout << "Lutfen 4 islem degerini ogrenmek istediginiz 2 sayiyi giriniz"<< endl;
+   cin >> sayi1;
+   cin >> sayi2;
+   toplam = sayi1 + sayi2;
+   if (sayi1>sayi2){
+    cikarma = sayi1 - sayi2;
+   }else{
+   cikarma = sayi2 - sayi1;
+   }
+   carpma = sayi1 * sayi2;
+   if (sayi1>sayi2){
+    bolme = sayi1 / sayi2;
+   }else{
+   bolme = sayi2 / sayi1;
+   }
+   cout << "Toplam: " << toplam <<endl << "Cikarma: " << cikarma << endl << "Carpma: " << carpma << endl << "Bolme: " << bolme << endl;
+   return 0;
+}

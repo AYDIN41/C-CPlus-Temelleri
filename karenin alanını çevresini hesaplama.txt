@@ -1,0 +1,11 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int kareninbirkenari;
+   cout<<"Lutfen karenin bir kenarini giriniz.." << endl;
+   cin>>kareninbirkenari;
+   cout<<"Karenin Cevresi: "<< kareninbirkenari*4 <<"   "<< "Karenin alani: " << kareninbirkenari * kareninbirkenari << endl;
+}

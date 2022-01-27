@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+void sayilarindegerinidegistirme(int *x,int *y){
+    int temp;
+    temp = *x;
+    *x=*y;
+    *y=temp;
+
+}
+
+int main()
+{
+    int sayi1,sayi2;
+    int *sayininAdresi1,*sayininAdresi2;
+    cout << "Lutfen 2 tane sayi giriniz..." << endl;
+    cin >> sayi1 >> sayi2;
+    sayilarindegerinidegistirme(&sayi1,&sayi2);
+    //sayininAdresi1 = &sayi2;
+   // sayininAdresi2 = &sayi1;
+    cout << sayi1 << "    " << sayi2;
+}

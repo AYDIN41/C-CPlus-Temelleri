@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+  float aci1,aci2,toplam=0;
+  cout << "Lutfen 3.degeri ogrenmek istediginiz 2 aciyi giriniz..." << endl;
+  cin >> aci1>>aci2;
+  toplam = 180 - (aci1+aci2);
+  if(aci1 + aci2 <180 && aci1 + aci2 > 0){
+    cout << "3. aci: " << toplam << endl;
+  } else {
+    cout << "Girdiginiz sayi degeri yanlistir..." << endl;
+  }
+  /*cout << "Lutfen ucgenin kenarlarini girin..." << endl;
+  cin >> aci1>>aci2>>aci3;
+  float acilarinToplami = aci1+ aci2 + aci3;
+  if (acilarinToplami == 180){
+    if (aci1== 60 && aci2 == 60){
+        cout << "Eskenar ucgen..." << endl;
+    } else if ( aci1 = aci2 || aci1 == aci3 || aci2 == aci3){
+        cout << "Ikizkenar ucgen..." << endl;
+    } else{
+        cout << "Cesitkenar ucgen..." << endl;
+    }
+  } else {
+    cout << "Girdiginiz degerler ucgene ait degildir..." << endl;
+  }*/
+}

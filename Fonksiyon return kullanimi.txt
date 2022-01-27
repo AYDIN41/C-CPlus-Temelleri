@@ -1,0 +1,35 @@
+#include <iostream>
+
+using namespace std;
+
+
+
+int dogumYiliBulma(int dogumTarihi){
+
+        return 2021-dogumTarihi;
+
+}
+
+
+
+/*int toplama (int sayi1,int sayi2){
+        return sayi1+sayi2;
+}*/
+
+int main()
+{
+    int dogumYili;
+    cout << "Lutfen dogum tarihinizi girin.." << endl;
+    cin >> dogumYili;
+    cout << "Yasiniz: "<< dogumYiliBulma(dogumYili);
+
+
+
+
+   /* int x,y;
+    while(1){
+        cout << "Lutfen toplamak istediginiz sayilari giriniz..." <<endl;
+        cin >> x >> y;
+        cout << toplama(x,y) << endl;
+    }*/
+}

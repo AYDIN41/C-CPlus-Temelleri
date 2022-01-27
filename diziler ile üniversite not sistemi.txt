@@ -1,0 +1,341 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    string isim1;
+    string isim2;
+    string isim3;
+    float ortalama[3];
+    float vizesinavi[3];
+    float finalsinavi[3];
+
+    cout << "Lutfen isimlerinizi yaziniz...(3 ile sinirlidir...)" << endl;
+    cin>>isim1>>isim2>>isim3;
+
+
+    for(int i = 0;i<3;i++){
+            if (i==0){
+                cout<< isim1 << " Lutfen vize notunuzu yaziniz..." << endl;
+                cin >> vizesinavi[i];
+            while(vizesinavi[i]<0 || vizesinavi[i]>100){
+                cout << "Girdiginiz deger kabul edilmemektedir..." << endl << "Lutfen tekrar girin..." << endl;
+                 cin >> vizesinavi[i];
+            }
+
+            } if (i==1){
+            cout<< isim2 << " Lutfen vize notunuzu yaziniz..." << endl;
+                cin >> vizesinavi[i];
+                while(vizesinavi[i]<0 || vizesinavi[i]>100){
+                cout << "Girdiginiz deger kabul edilmemektedir..." << endl << "Lutfen tekrar girin..." << endl;
+                 cin >> vizesinavi[i];
+            }
+            }
+            if (i==2){
+            cout<< isim3 << " Lutfen vize notunuzu yaziniz..." << endl;
+                cin >> vizesinavi[i];
+               while(vizesinavi[i]<0 || vizesinavi[i]>100){
+                cout << "Girdiginiz deger kabul edilmemektedir..." << endl << "Lutfen tekrar girin..." << endl;
+                 cin >> vizesinavi[i];
+            }
+            }
+
+    }
+     for(int i = 0;i<3;i++){
+        if (i==0){
+                cout<< isim1 << " Lutfen final notunuzu yaziniz..." << endl;
+                cin >> finalsinavi[i];
+                while(finalsinavi[i]<0 || finalsinavi[i]>100){
+                    cout << "Girdiginiz deger kabul edilmemektedir..." << endl << "Lutfen tekrar girin..." << endl;
+                 cin >> finalsinavi[i];
+                }
+
+            } if (i==1){
+            cout<< isim2 << " Lutfen final notunuzu yaziniz..." << endl;
+                cin >> finalsinavi[i];
+               while(finalsinavi[i]<0 || finalsinavi[i]>100){
+                    cout << "Girdiginiz deger kabul edilmemektedir..." << endl << "Lutfen tekrar girin..." << endl;
+                 cin >> finalsinavi[i];
+                }
+            }
+            if (i==2){
+            cout<< isim3 << " Lutfen final notunuzu yaziniz..." << endl;
+                cin >> finalsinavi[i];
+                while(finalsinavi[i]<0 || finalsinavi[i]>100){
+                    cout << "Girdiginiz deger kabul edilmemektedir..." << endl << "Lutfen tekrar girin..." << endl;
+                 cin >> finalsinavi[i];
+                }
+            }
+    }
+    for (int i = 0;i<3;i++){
+        ortalama[i] = vizesinavi[i] * 0.4 + finalsinavi[i] * 0.6;
+    }
+    for(int i = 0;i<3;i++){
+            if(i==0){
+                 cout<< "isim: " << isim1 << "  Ortalamasi: " <<  ortalama[0] << endl;
+                 if(ortalama[0]>=85){
+                    cout << "Notunuz AA." << endl;
+                 }else if (ortalama[0]>=60 && ortalama[0]<85){
+                    cout << "Notunuz BB"<< endl;
+                 }else if (ortalama[0]>40 && ortalama[0]<60){
+                    cout << "Notunuz CC"<< endl;
+                 }else{
+                    cout << "Notunuz FF"<< endl;
+                 }
+            }else if (i==1){
+                cout<< "isim: " << isim2 << "   Ortalamasi: " <<  ortalama[1] << endl;
+                if(ortalama[1]>=85){
+                    cout << "Notunuz AA." << endl;
+                 }else if (ortalama[1]>=60 && ortalama[1]<85){
+                    cout << "Notunuz BB"<< endl;
+                 }else if (ortalama[1]>40 && ortalama[1]<60){
+                    cout << "Notunuz CC"<< endl;
+                 }else{
+                    cout << "Notunuz FF"<< endl;
+                 }
+            }else if (i==2){
+                cout<< "isim: " << isim3 << "   " <<"Ortalamasi: " <<  ortalama[2] << endl;
+                if(ortalama[2]>=85){
+                    cout << "Notunuz AA." << endl;
+                 }else if (ortalama[2]>=60 && ortalama[2]<85){
+                    cout << "Notunuz BB"<< endl;
+                 }else if (ortalama[2]>40 && ortalama[2]<60){
+                    cout << "Notunuz CC"<< endl;
+                 }else{
+                    cout << "Notunuz FF"<< endl;
+                 }
+            }
+
+
+    }
+}
+veya
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    string isim1;
+    string isim2;
+    string isim3;
+    float ortalama[3];
+    float vizesinavi[3];
+    float finalsinavi[3];
+    bool unilise[3];
+    int deger,deger2,deger3;
+
+    cout << "Lutfen isimlerinizi yaziniz...(3 ile sinirlidir...)" << endl;
+    cin>>isim1>>isim2>>isim3;
+
+
+    for(int i = 0;i<3;i++){
+            if (i==0){
+                    cout << "Lise okuyorsaniz '1'e Universite okuyorsaniz '0'a basin" << endl;
+                    cin >> unilise[0];
+                     deger = unilise[0];
+                if(unilise[0]==0){
+                    cout<< isim1 << " Lutfen vize notunuzu yaziniz..." << endl;
+                cin >> vizesinavi[i];
+            while(vizesinavi[i]<0 || vizesinavi[i]>100){
+                cout << "Girdiginiz deger kabul edilmemektedir..." << endl << "Lutfen tekrar girin..." << endl;
+                 cin >> vizesinavi[i];
+            }
+                } else{
+                cout<< isim1 << " Lutfen 1. notunuzu yaziniz..." << endl;
+                cin >> vizesinavi[i];
+            while(vizesinavi[i]<0 || vizesinavi[i]>100){
+                cout << "Girdiginiz deger kabul edilmemektedir..." << endl << "Lutfen tekrar girin..." << endl;
+                 cin >> vizesinavi[i];
+            }
+                }
+
+            } if (i==1){
+                    cout << "Lise okuyorsaniz '1'e Universite okuyorsaniz '0'a basin" << endl;
+                    cin >> unilise[1];
+                     deger2 = unilise[2];
+                    if(unilise[1]==0){
+            cout<< isim2 << " Lutfen vize notunuzu yaziniz..." << endl;
+                cin >> vizesinavi[i];
+                while(vizesinavi[i]<0 || vizesinavi[i]>100){
+                cout << "Girdiginiz deger kabul edilmemektedir..." << endl << "Lutfen tekrar girin..." << endl;
+                 cin >> vizesinavi[i];
+                    }
+            }
+            else{
+                    cout<< isim2 << " Lutfen 1. notunuzu yaziniz..." << endl;
+                cin >> vizesinavi[i];
+                while(vizesinavi[i]<0 || vizesinavi[i]>100){
+                cout << "Girdiginiz deger kabul edilmemektedir..." << endl << "Lutfen tekrar girin..." << endl;
+                 cin >> vizesinavi[i];
+                    }
+
+            }
+            }
+            if (i==2){
+                    cout << "Lise okuyorsaniz '1'e Universite okuyorsaniz '0'a basin" << endl;
+                    cin >> unilise[2];
+                     deger3 = unilise[2];
+            if(unilise[2]==0){
+                 cout<< isim3 << " Lutfen vize notunuzu yaziniz..." << endl;
+                cin >> vizesinavi[i];
+               while(vizesinavi[i]<0 || vizesinavi[i]>100){
+                cout << "Girdiginiz deger kabul edilmemektedir..." << endl << "Lutfen tekrar girin..." << endl;
+                 cin >> vizesinavi[i];
+            }
+
+            } else
+            { cout<< isim3 << " Lutfen vize notunuzu yaziniz..." << endl;
+                cin >> vizesinavi[i];
+               while(vizesinavi[i]<0 || vizesinavi[i]>100){
+                cout << "Girdiginiz deger kabul edilmemektedir..." << endl << "Lutfen tekrar girin..." << endl;
+                 cin >> vizesinavi[i]; }
+            }
+
+
+            }
+
+    }
+     for(int i = 0;i<3;i++){
+        if (i==0){
+
+                if(deger==0){
+                    cout<< isim1 << " Lutfen final notunuzu yaziniz..." << endl;
+                cin >> finalsinavi[i];
+                while(finalsinavi[i]<0 || finalsinavi[i]>100){
+                    cout << "Girdiginiz deger kabul edilmemektedir..." << endl << "Lutfen tekrar girin..." << endl;
+                 cin >> finalsinavi[i];
+                }
+                }else{
+                cout<< isim1 << " Lutfen 2. notunuzu yaziniz..." << endl;
+                cin >> finalsinavi[i];
+                while(finalsinavi[i]<0 || finalsinavi[i]>100){
+                    cout << "Girdiginiz deger kabul edilmemektedir..." << endl << "Lutfen tekrar girin..." << endl;
+                 cin >> finalsinavi[i];
+                }
+                }
+
+
+            } if (i==1){
+                if(deger2==0){
+                    cout<< isim2 << " Lutfen final notunuzu yaziniz..." << endl;
+                cin >> finalsinavi[i];
+               while(finalsinavi[i]<0 || finalsinavi[i]>100){
+                    cout << "Girdiginiz deger kabul edilmemektedir..." << endl << "Lutfen tekrar girin..." << endl;
+                 cin >> finalsinavi[i];
+                }
+                }else{
+                cout<< isim2 << " Lutfen 2. notunuzu yaziniz..." << endl;
+                cin >> finalsinavi[i];
+               while(finalsinavi[i]<0 || finalsinavi[i]>100){
+                    cout << "Girdiginiz deger kabul edilmemektedir..." << endl << "Lutfen tekrar girin..." << endl;
+                 cin >> finalsinavi[i];
+                }
+                }
+
+            }
+            if (i==2){
+            if(deger3==0){
+                cout<< isim3 << " Lutfen final notunuzu yaziniz..." << endl;
+                cin >> finalsinavi[i];
+                while(finalsinavi[i]<0 || finalsinavi[i]>100){
+                    cout << "Girdiginiz deger kabul edilmemektedir..." << endl << "Lutfen tekrar girin..." << endl;
+                 cin >> finalsinavi[i];
+                }
+            }else{
+            cout<< isim3 << " Lutfen 2. notunuzu yaziniz..." << endl;
+                cin >> finalsinavi[i];
+                while(finalsinavi[i]<0 || finalsinavi[i]>100){
+                    cout << "Girdiginiz deger kabul edilmemektedir..." << endl << "Lutfen tekrar girin..." << endl;
+                 cin >> finalsinavi[i];
+                }
+            }
+
+            }
+    }
+    for (int i = 0;i<3;i++){
+        ortalama[i] = vizesinavi[i] * 0.4 + finalsinavi[i] * 0.6;
+    }
+    for(int i = 0;i<3;i++){
+            if(i==0){
+            if(deger==0){
+                 cout<< "isim: " << isim1 << "  Ortalamasi: " <<  ortalama[0] << endl;
+                 if(ortalama[0]>=85){
+                    cout << "Notunuz AA." << endl;
+                 }else if (ortalama[0]>=60 && ortalama[0]<85){
+                    cout << "Notunuz BB"<< endl;
+                 }else if (ortalama[0]>40 && ortalama[0]<60){
+                    cout << "Notunuz CC"<< endl;
+                 }else{
+                    cout << "Notunuz FF"<< endl;
+                 }
+            }else{
+            cout<< "isim: " << isim1 << "  Ortalamasi: " <<  ortalama[0] << endl;
+                 if(ortalama[0]>=85){
+                    cout << "Notunuz 5." << endl;
+                 }else if (ortalama[0]>=60 && ortalama[0]<85){
+                    cout << "Notunuz 4"<< endl;
+                 }else if (ortalama[0]>40 && ortalama[0]<60){
+                    cout << "Notunuz 2"<< endl;
+                 }else{
+                    cout << "Notunuz 1"<< endl;
+            }
+            }
+
+            }else if (i==1){
+                if(deger2==0){
+                    cout<< "isim: " << isim2 << "   Ortalamasi: " <<  ortalama[1] << endl;
+                if(ortalama[1]>=85){
+                    cout << "Notunuz AA." << endl;
+                 }else if (ortalama[1]>=60 && ortalama[1]<85){
+                    cout << "Notunuz BB"<< endl;
+                 }else if (ortalama[1]>40 && ortalama[1]<60){
+                    cout << "Notunuz CC"<< endl;
+                 }else{
+                    cout << "Notunuz FF"<< endl;
+                 }
+                }else{
+                cout<< "isim: " << isim2 << "   Ortalamasi: " <<  ortalama[1] << endl;
+                if(ortalama[1]>=85){
+                    cout << "Notunuz 5." << endl;
+                 }else if (ortalama[1]>=60 && ortalama[1]<85){
+                    cout << "Notunuz 4"<< endl;
+                 }else if (ortalama[1]>40 && ortalama[1]<60){
+                    cout << "Notunuz 2"<< endl;
+                 }else{
+                    cout << "Notunuz 1"<< endl;
+                 }
+                }
+
+            }else if (i==2){
+                if(deger3==0){
+                                    cout<< "isim: " << isim3 << "   " <<"Ortalamasi: " <<  ortalama[2] << endl;
+                if(ortalama[2]>=85){
+                    cout << "Notunuz AA." << endl;
+                 }else if (ortalama[2]>=60 && ortalama[2]<85){
+                    cout << "Notunuz BB"<< endl;
+                 }else if (ortalama[2]>40 && ortalama[2]<60){
+                    cout << "Notunuz CC"<< endl;
+                 }else{
+                    cout << "Notunuz FF"<< endl;
+                 }
+                }else{
+                                    cout<< "isim: " << isim3 << "   " <<"Ortalamasi: " <<  ortalama[2] << endl;
+                if(ortalama[2]>=85){
+                    cout << "Notunuz 5." << endl;
+                 }else if (ortalama[2]>=60 && ortalama[2]<85){
+                    cout << "Notunuz 4"<< endl;
+                 }else if (ortalama[2]>40 && ortalama[2]<60){
+                    cout << "Notunuz 2"<< endl;
+                 }else{
+                    cout << "Notunuz 1"<< endl;
+                 }
+                }
+
+            }
+
+
+    }
+}
+ 

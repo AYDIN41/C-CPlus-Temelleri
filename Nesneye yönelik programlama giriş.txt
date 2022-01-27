@@ -1,0 +1,24 @@
+#include <iostream>
+#include <string.h>
+#include <stdlib.h>
+#include <time.h>
+
+using namespace std;
+class insan{
+public:
+    string isim;
+    int boy;
+
+};
+int main()
+{
+        insan insan1;
+        insan1.isim = "Emirhan AYDIN";
+        insan1.boy = 175;
+        insan insan2;
+        insan2.isim = "Ali Emin Can";
+        insan2.boy = 165;
+        cout << "Isminiz: "<< insan1.isim << "\n" << "Boyunuz: " << insan1.boy<< endl;
+        cout << "Isminiz: "<< insan2.isim << "\n" << "Boyunuz: " << insan2.boy;
+
+}

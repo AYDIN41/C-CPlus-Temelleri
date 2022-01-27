@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int sayi;
+    int realnumber;
+    int faktor=1;
+  cout << "Lutfen bir sayi giriniz..." << endl;
+  cin>> sayi;
+  realnumber = sayi;
+  if(sayi==0){
+    faktor = 1;
+  }
+  while(sayi>0){
+    faktor = faktor * sayi;
+    sayi--;
+  }
+  cout << "Yazdiginiz sayinin: " << realnumber << "! " << "faktoriyeli: " << faktor;
+}

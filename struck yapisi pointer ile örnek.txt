@@ -1,0 +1,41 @@
+#include <iostream>
+#include <string.h>
+#include <stdlib.h>
+#include <time.h>
+
+using namespace std;
+
+struct ogrenci{
+
+ string isim;
+ int numara;
+
+};
+void isimdegistirme(ogrenci* isimDegistir,string yeniIsim,int yeniNumara){
+    isimDegistir->isim = yeniIsim;
+    isimDegistir->numara = yeniNumara;
+}
+void ogrenciyiGoruntule (ogrenci ogr){
+    cout << ogr.isim << endl << "Numaraniz: "<< ogr.numara;
+}
+void ogrenciyiSil (ogrenci* ogr){
+    ogr->isim = "\nBu ogrenci dosyalarimizdan silinmistir...";
+
+    ogr->numara = 0;
+}
+
+int main()
+{
+  ogrenci ogr1;
+  cout << "Lutfen ogrenci adini ve numarasini giriniz..." << endl;
+  cin >> ogr1.isim>>ogr1.numara;
+  cout << ogr1.isim << endl << ogr1.numara << "\n";
+  isimdegistirme(&ogr1,"Aydin",191005026);
+  ogrenciyiGoruntule(ogr1);
+  ogrenciyiSil(&ogr1);
+    ogrenciyiGoruntule(ogr1);
+
+//    cout << ogr1.isim << endl;
+
+}
+

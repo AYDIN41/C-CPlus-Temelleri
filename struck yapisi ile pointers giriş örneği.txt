@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string.h>
+#include <stdlib.h>
+#include <time.h>
+
+using namespace std;
+
+struct ogrenci{
+
+ string isim;
+
+};
+void isimdegistirme(ogrenci* isimDegistir,string yeniIsim){
+    isimDegistir->isim = yeniIsim;
+    cout << isimDegistir->isim<< "\n";
+}
+
+int main()
+{
+  ogrenci ogr1;
+  cout << "Lutfen ogrenci adini giriniz..." << endl;
+  cin >> ogr1.isim;
+  cout << ogr1.isim << endl;
+  isimdegistirme(&ogr1,"Aydin");
+    cout << ogr1.isim << endl;
+
+}

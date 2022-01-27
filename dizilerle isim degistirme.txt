@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    char dizi[40];
+    int sayac=0;
+    cout << "Lutfen bir isim giriniz..." << endl;
+    cin >> dizi;
+    int i=0,j=0;
+    for(;dizi[sayac]!='\0';sayac++);
+    for(;i<sayac-1;i++){
+            j = i+1;
+        for(;j<sayac;j++){
+            if(dizi[i]>dizi[j]){
+                int temp;
+                temp = dizi[i];
+                dizi[i] = dizi[j];
+                dizi[j] = temp;
+            }
+        }
+    }
+    cout << dizi;
+}

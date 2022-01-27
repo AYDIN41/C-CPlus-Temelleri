@@ -1,0 +1,54 @@
+#include <iostream>
+#include <string.h>
+
+using namespace std;
+class altin{
+public:
+    int kullanilanMiktar;
+public:
+    void neKadarKullandim(){
+    cout << kullanilanMiktar << endl;
+    }
+
+};
+class demir{
+public:
+    int kullanilanMiktar;
+public:
+    void neKadarKullandim(){
+    cout << kullanilanMiktar << endl;
+    }
+
+};
+
+
+
+class motor: public altin,public demir{
+public:
+    int devirSayisi;
+    int kullanilanAltin;
+    int kullanilanDemir;
+
+    void devirsayisii(){
+    cout << devirSayisi << endl;
+    }
+};
+
+
+int main()
+{
+    motor cp1;
+    cp1.kullanilanDemir = 1500;
+    cp1.kullanilanAltin = 5;
+    cp1.devirSayisi = 1600;
+    cp1.altin::kullanilanMiktar = cp1.kullanilanAltin;
+    cp1.demir::kullanilanMiktar = cp1.kullanilanDemir;
+
+ //   cout << "Kullanilan demir: "<< cp1.kullanilanDemir << "\n" <<"Kullanilan altin: " << cp1.kullanilanAltin << "\n" << "Devir sayisi: "<< cp1.devirSayisi;
+    cout << "Kulllanilan Altin grami: ";
+    cp1.demir::neKadarKullandim();
+    cout << "Kullanilan demir grami: ";
+    cp1.altin::neKadarKullandim();
+    cout << "Devir sayisi: ";
+    cp1.devirsayisii();
+}

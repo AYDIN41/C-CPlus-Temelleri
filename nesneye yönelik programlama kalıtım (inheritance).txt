@@ -1,0 +1,61 @@
+#include <iostream>
+#include <string.h>
+#include <stdlib.h>
+#include <time.h>
+#include <fstream>
+
+using namespace std;
+class takim{
+public:
+    string isim;
+    int kurulus;
+
+};
+
+
+
+class futbolcu: public takim{
+private:
+    string isim = "Bir isim belirtimedi";
+    int dogumYili = 0;
+    float maas= 100000;
+
+public:
+    string getIsim(){
+    return isim;
+    }
+    int getDogumYili(){
+    return dogumYili;
+    }
+    float getMaas(){
+        return maas;
+    }
+    void setIsim(string isim){
+    this->isim = isim;
+    }
+    void setDogumYili(int dogumYili){
+    this->dogumYili = dogumYili;
+    }
+};
+
+int main()
+{
+    futbolcu f1;
+    takim *takimf1;
+    takimf1 = &f1;
+    takimf1->isim;
+
+    //f1.isim2 = "Real Madrid";
+    string issim,takim;
+    int dogumYyili;
+    cout << "Lutfen favori oyuncunuzun ismini,takimini ve dogum tarihini giriniz..." << endl;
+    cin >> issim >> takim >>dogumYyili;
+    takimf1->isim = takim;
+    f1.setIsim(issim);
+    f1.setDogumYili(dogumYyili);
+    cout << f1.getIsim() << endl;
+    cout << f1.getDogumYili() << endl;
+    cout << takimf1->isim << endl;
+    cout << "This is your favourite player's salary for per week: " << f1.getMaas() << "\n";
+
+}

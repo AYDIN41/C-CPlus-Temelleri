@@ -1,0 +1,55 @@
+#include <iostream>
+#include <string.h>
+#include <stdlib.h>
+#include <time.h>
+#include <fstream>
+
+using namespace std;
+
+class A{
+public:
+    int x;
+public:
+    void setX(int deger){
+    x=deger;
+    }
+    void getX(){
+        cout << x << endl;
+
+    }
+
+};
+class B{
+protected:
+    int y;
+};
+class C{
+private:
+    int z;
+};
+class D:public A,public B,public C{
+public:
+    D(){
+    y=5;
+    }
+public:
+    void getY(){
+
+    cout << y;
+
+    }
+
+
+};
+int main()
+{
+        D d1;
+        A a1;
+        //d1.x = 41;
+      //  d1.y = 38;
+      int deger = 3;
+        a1.setX(deger);
+        a1.getX();
+        d1.getY();
+
+}

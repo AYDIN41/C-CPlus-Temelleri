@@ -1,0 +1,56 @@
+#include <iostream>
+#include <string.h>
+#include <stdlib.h>
+#include <time.h>
+#include <fstream>
+using namespace std;
+
+
+
+int main()
+{
+    string website;
+    //cout << "Lutfen aramak istediginiz website ismini giriniz..." << endl;
+   // cin >> website;
+   int yas;
+    cout << "Lutfen yasinizi giriniz..." << endl;
+    cin >> yas;
+    try{
+    if(yas<0){
+        throw 0;
+    }
+    }
+   catch(int hataKodu){
+        cout << "Yasiniz 0'dan kucuk olamaz..."  << endl;
+   }
+
+
+
+
+
+
+    /* try{
+       if(website == "1"){
+            throw 202;
+        }
+    else if(website != "www.google.com"){
+        throw 404;
+    }
+    }
+    catch (int hatakodu){
+        if(hatakodu == 404){
+                    cout << "Girdiginiz adres yanlis..." << "   " << hatakodu;
+
+        }
+         else if(hatakodu == 202){
+                    cout << "Lutfen '1' girmeyiniz..." << "   " << hatakodu;
+
+        }
+    }
+*/
+
+
+    return 0;
+}
+
+

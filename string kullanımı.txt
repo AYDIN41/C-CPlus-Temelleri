@@ -1,0 +1,15 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   string isim;
+   string soyisim;
+   string meslek;
+   int yas;
+
+   cout << "Lutfen isim soyisim yas ve meslek degerlerini girin..: " << endl;
+   cin >> isim >> soyisim >> meslek >> yas ;
+   cout << "Girdiginiz kulllanici bilgileri: " << isim << "     " << soyisim << "     " <<meslek<< "    "<< yas << endl;
+}

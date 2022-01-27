@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+void sayilarinDizi(int sayidizi[],int boyut){
+        for(int i=0;i<boyut;i++){
+            cout << sayidizi[i] << "    " ;
+        }
+}
+
+int main()
+{
+    int sayidizisi[10];
+    int sayidizisi2[10];
+    int sayidizisi3[10];
+    int boyut;
+    cout << "Lutfen kac tane sayi girmek istediginizi yaziniz..." << endl;
+    cin >> boyut;
+    for(int i = 0;i<boyut;i++){
+            cin >> sayidizisi[i];
+    }
+    sayilarinDizi(sayidizisi,boyut);
+    /*cout << endl;
+    sayilarinDizi(sayidizisi2,boyut);
+    cout << endl;
+    sayilarinDizi(sayidizisi3,boyut);*/
+
+
+}

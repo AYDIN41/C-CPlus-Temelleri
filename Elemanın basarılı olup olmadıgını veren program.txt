@@ -1,0 +1,82 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    string isim1,isim2,isim3;
+    string soyisim1,soyisim2,soyisim3;
+    int kimlikno1,kimlikno2,kimlikno3;
+    bool cinsiyet1,cinsiyet2,cinsiyet3;
+    int urunadedi1,urunadedi2,urunadedi3;
+    cout << "Lutfen Kullanici bilgilerini giriniz..." << "Cinsiyet E ise '0' K ise '1' i tuslayin" << endl;
+    cin >> isim1 >> soyisim1 >> kimlikno1 >> cinsiyet1;
+    cin >> isim2 >> soyisim2 >> kimlikno2 >> cinsiyet2;
+    cin >> isim3 >> soyisim3 >> kimlikno3 >> cinsiyet3;
+    cout << "Lutfen urun adetlerini giriniz"<< endl;
+    cin >> urunadedi1 >> urunadedi2 >> urunadedi3;
+    if (urunadedi1>30){
+             if(cinsiyet1 == 1){
+        cout << isim1 << "  " << soyisim1 <<"   "<< kimlikno1 << "  " << "Kadin"<< endl;
+         cout << "Bu aylik hedefinizi yakaladiniz!!!" << endl;
+    }else{
+    cout << isim1 << "  " << soyisim1 <<"   "<< kimlikno1 << "  " << "Erkek"<< endl;
+        cout << "Bu aylik hedefinizi yakaladiniz!!!" << endl;
+
+    }
+    } else{
+             if(cinsiyet1 == 1){
+        cout << isim1 << "  " << soyisim1 <<"   "<< kimlikno1 << "  " << "Kadin"<< endl;
+        cout << "Bu aylik hedefinizi yakalayamadiniz!!!" << endl;
+    }else{
+    cout << isim1 << "  " << soyisim1 <<"   "<< kimlikno1 << "  " << "Erkek"<< endl;
+    cout << "Bu aylik hedefinizi yakalayamadiniz!!!" << endl;
+    }}
+    if (urunadedi2>30){
+             if(cinsiyet2 == 1){
+        cout << isim2 << "  " << soyisim2 <<"   "<< kimlikno2 << "  " << "Kadin"<< endl;
+        cout << "Bu aylik hedefinizi yakaladiniz!!!" << endl;
+    }else{
+    cout << isim2 << "  " << soyisim2 <<"   "<< kimlikno2 << "  " << "Erkek"<< endl;
+        cout << "Bu aylik hedefinizi yakaladiniz!!!" << endl;
+
+    }
+    } else{
+             if(cinsiyet2 == 1){
+        cout << isim2 << "  " << soyisim2 <<"   "<< kimlikno2 << "  " << "Kadin"<< endl;
+        cout << "Bu aylik hedefinizi yakalayamadiniz!!!" << endl;
+    }else{
+    cout << isim2 << "  " << soyisim2 <<"   "<< kimlikno2 << "  " << "Erkek"<< endl;
+    cout << "Bu aylik hedefinizi yakalayamadiniz!!!" << endl;
+    }}
+    if (urunadedi3>30){
+             if(cinsiyet3 == 1){
+        cout << isim3 << "  " << soyisim3 <<"   "<< kimlikno3 << "  " << "Kadin"<< endl;
+         cout << "Bu aylik hedefinizi yakaladiniz!!!" << endl;
+    }else{
+    cout << isim3 << "  " << soyisim3 <<"   "<< kimlikno3 << "  " << "Erkek"<< endl;
+        cout << "Bu aylik hedefinizi yakaladiniz!!!" << endl;
+
+    }
+    } else{
+             if(cinsiyet3 == 1){
+        cout << isim3 << "  " << soyisim3 <<"   "<< kimlikno3 << "  " << "Kadin"<< endl;
+         cout << "Bu aylik hedefinizi yakalayamadiniz!!!" << endl;
+    }else{
+    cout << isim3 << "  " << soyisim3 <<"   "<< kimlikno3 << "  " << "Erkek"<< endl;
+    cout << "Bu aylik hedefinizi yakalayamadiniz!!!" << endl;
+    }
+}
+   /* if(cinsiyet2 == 1){
+        cout << isim2 << "  " << soyisim2 <<"   "<< kimlikno2 << "  " << "Kadin"<< endl;
+    }else{
+    cout << isim2 << "  " << soyisim2 <<"   "<< kimlikno2 << "  " << "Erkek"<< endl;
+    }
+    if(cinsiyet3 == 1){
+        cout << isim3 << "  " << soyisim3 <<"   "<< kimlikno3 << "  " << "Kadin"<< endl;
+    }else{
+    cout << isim3 << "  " << soyisim3 <<"   "<< kimlikno3 << "  " << "Erkek"<< endl;
+    }*/
+
+
+    }

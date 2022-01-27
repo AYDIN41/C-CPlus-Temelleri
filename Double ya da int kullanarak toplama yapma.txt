@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int sayi1,sayi2;
+    double buyukSayi1,buyukSayi2;
+    int karar;
+    cout<< "Noktali toplama yapmak icin 1'e basit toplama yapmak icin 2'e tiklayin" << endl;
+    cin>>karar;
+     while(karar !=1 && karar!=2){
+        cout << "Seceneginiz hic birini icermiyor lutfen yeniden yaziniz..." << endl;
+        cin>>karar;
+    }
+    if(karar==1){
+        cout << "Noktali toplamaya hosgeldiniz..." << endl;
+        cin>>buyukSayi1>>buyukSayi2;
+        cout << "Sayilarin toplami: " << buyukSayi1+buyukSayi2;
+    }
+    else if(karar==2){
+        cout << "Basit toplamaya hosgeldiniz..." << endl;
+        cin>>sayi1>>sayi2;
+        cout << "Sayilarin toplami: " << sayi1+sayi2;
+    }
+
+}

@@ -1,0 +1,14 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int sayi;
+    bool anahtar;
+    cout << "Lutfen bir sayi ve anahtar degeri giriniz:   ";
+    cin >> sayi;
+    cin >> anahtar;
+    cout << "Kullanicinin girdigi degerker: " << sayi<< "   " << anahtar << endl;
+    return 0;
+}

@@ -1,0 +1,32 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+  int stokUrun;
+  char karar;
+  int istenenmal;
+  cout << "Lutfen stoktaki mal varliginizi giriniz..." << endl;
+  cin >> stokUrun;
+  cout << "Urun eklemek icin '+', cikarmak icin '-' basiniz..." << endl;
+  cin >> karar;
+  switch (karar){
+case '+':
+    cout << "Lutfen eklemek istediginiz urunu yaziniz..."<< endl;
+    cin >> istenenmal;
+    stokUrun += istenenmal;
+    cout << "Stokta bulanan urununuz: " << stokUrun;
+
+case '-':
+    cout << "Lutfen cikarmak istediginiz urunu yaziniz..." << endl;
+    cin >> istenenmal;
+    while(istenenmal > stokUrun){
+        cout << "Cikarilan sayi mevcut sayidan fazla olamaz!" << endl;
+        cout << "Lutfen yeniden girin" << endl;
+        cin >> istenenmal;
+    }
+    stokUrun -= istenenmal;
+    cout << "Stokta bulanan urununuz: " << stokUrun;
+    }
+}

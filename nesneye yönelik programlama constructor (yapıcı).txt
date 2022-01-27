@@ -1,0 +1,64 @@
+#include <iostream>
+#include <string.h>
+#include <stdlib.h>
+#include <time.h>
+
+using namespace std;
+class ogrenci{
+private:
+    string isim;
+    int numara;
+public:
+    ogrenci(string yazilacakIsim,int yazilacakNumara){
+    isim = yazilacakIsim;
+    numara = yazilacakNumara;
+    }
+    ogrenci(string yazilacakIsim){
+    isim = yazilacakIsim;
+    numara =0;
+    }
+
+void setIsim(string yazilacakIsim){
+    if(yazilacakIsim.size()>=2){
+     isim = yazilacakIsim;
+
+    }else{
+        cout << "Yazdiginiz isim sadece bir harften olusuyor..." << endl;
+    }
+
+}
+
+void setNumara(int yazilacakNumara){
+    if(yazilacakNumara>0){
+            numara = yazilacakNumara;
+
+    }else{
+    cout << "Notr ya da negatif bir sayi girdiniz... " << endl;
+    }
+
+}
+/*void isimNumaraGorme(){
+    cout << isim << "   " << numara;
+}*/
+void sonucGor(){
+    cout << "Isim: " << isim << endl << "Numara: " << numara << endl;
+}
+ string getIsim(){
+    return isim;
+ }
+int getNumara(){
+    return numara;
+}
+
+
+
+};
+int main()
+{
+    ogrenci ogr1("Emirhan Aydin",154);
+    ogrenci ogr2("Ali Mert");
+    //ogr1.setIsim("Ali Mert");
+   // cout << ogr1.getIsim() << " " << ogr1.getNumara();
+    ogr1.sonucGor();
+    ogr2.sonucGor();
+}

@@ -1,0 +1,24 @@
+#include <iostream>
+#include <string.h>
+#include <stdlib.h>
+#include <time.h>
+
+using namespace std;
+
+struct ogrenci{
+ int numara;
+ string isim;
+ string soyisim;
+ string bolum;
+
+};
+
+int main()
+{
+  ogrenci ogr1 = {191005026,"Emirhan","Aydin","Yonetim Bilisim"};
+  ogrenci ogr2;
+  cout << "Lutfen ogrenci bilgilerinizi giriniz... (numara-isim-soyisim-bolum)\n";
+  cin >> ogr2.numara >> ogr2.isim >> ogr2.soyisim >> ogr2.bolum;
+  cout << ogr2.numara <<"\n"<< ogr2.isim << " " << ogr2.soyisim <<"\n"<< ogr2.bolum << endl;
+  cout << ogr1.numara <<"\n"<< ogr1.isim << " " << ogr1.soyisim <<"\n"<< ogr1.bolum << endl;
+}

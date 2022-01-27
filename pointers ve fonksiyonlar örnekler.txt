@@ -1,0 +1,126 @@
+#include <iostream>
+#include <string.h>
+using namespace std;
+
+void dizilerinElemaniniGoruntule(int *diziSayisi, int boyut){
+        cout << "Girdiginiz Sayilar" << endl;
+        for(int i=0;i<boyut;i++){
+            cout << diziSayisi[i] << endl;
+        }
+        cout << endl;
+}
+void miktarArtirma(int *dizisayisi2,int boyut, int miktar){
+    for(int i=0;i<boyut;i++){
+            dizisayisi2[i] += miktar;
+        }
+}
+void miktareksiltme (int *dizisayisi3,int boyut, int miktar){
+        for(int i=0;i<boyut;i++){
+            dizisayisi3[i] -= miktar;
+        }
+}
+int dizileringenelSayiToplami(int *dizisayisi4,int boyut){
+        int toplam=0;
+        for(int i = 0;i<boyut;i++){
+            toplam += dizisayisi4[i];
+        }
+        return toplam;
+}
+void maksimumSayibulma(int *dizisayisi5,int boyut){
+        cout << "En buyuk yazdiginiz sayi..." << endl;
+        int maks=0;
+        for(int i=0;i<boyut;i++){
+            if(dizisayisi5[i]>maks){
+                    maks = dizisayisi5[i];
+
+            }
+        }
+        cout << maks << endl;
+
+}
+void ikiDiziyiToplama(int *dizisayisi1,int *dizisayisi2,int *dizisayisi3,int boyut){
+    for(int i = 0;i<boyut;i++){
+        dizisayisi3[i] = dizisayisi1[i] + dizisayisi2[i];
+    }
+}
+void enKucukSayiyiBulma(int *dizisayisi6,int boyut){
+        cout << "En kucuk yazdiginiz sayi..." << endl;
+        int minimum = dizisayisi6[0];
+        for(int i=0;i<boyut;i++){
+            if(dizisayisi6[i]<minimum){
+                    minimum = dizisayisi6[i];
+
+            }
+        }
+        cout << minimum << endl;
+
+}
+void ortalamaBulma(int *dizisayisi7, int boyut){
+
+    double ortalama = dizileringenelSayiToplami(dizisayisi7,boyut) /(double)boyut;
+    cout << "Sayilarin ortalamasi: " << ortalama << endl;
+
+      /*  int toplam=0;
+        float ortalama;
+        for(int i=0;i<boyut;i++){
+            toplam += dizisayisi7[i];
+        }
+         ortalama = toplam / boyut;
+        cout << "Sayilarin ortalamasi: " << ortalama << endl;*/
+}
+int main()
+{
+    int sayilar[10];
+    int sayilar2[10];
+    int boyut;
+    int artimiktar;
+    int eksimiktar;
+    int karar;
+    cout << "Lutfen gormek istediginiz sayilari yaziniz..." << endl;
+    cin >> boyut;
+    int toplam[boyut];
+    cout << "Sayilarinizi girebilirsiniz" << endl;
+    for (int i = 0;i<boyut;i++){
+        cin >> sayilar[i];
+    }
+    dizilerinElemaniniGoruntule(sayilar,boyut);
+    maksimumSayibulma(sayilar,boyut);
+    cout << "Sayilariniz miktarini artirmak istiyorsaniz 1'e azaltmak istiyorsaniz 0'a tiklayin islem yapmak istemiyorsaniz herhangi bir tusa basabilirsiniz..." << endl;
+    cin >> karar;
+    if(karar==1){
+            cout << "Artirmak istediginiz sayiyi giriniz..." << endl;
+            cin >> artimiktar;
+        miktarArtirma(sayilar,boyut,artimiktar);
+        dizilerinElemaniniGoruntule(sayilar,boyut);
+    }
+    else if (karar == 0){
+        cout << "Azaltmak istediginiz sayiyi giriniz..." << endl;
+        cin >> eksimiktar;
+        miktareksiltme(sayilar,boyut,eksimiktar);
+        dizilerinElemaniniGoruntule(sayilar,boyut);
+    }
+    else{
+        cout << "Herhangi bir islem yapmamayi tercih ettiniz..." << endl;
+    }
+    cout << "Girdiginiz sayilarin toplami: " << dizileringenelSayiToplami(sayilar,boyut) << endl;
+        maksimumSayibulma(sayilar,boyut);
+        enKucukSayiyiBulma(sayilar,boyut);
+        ortalamaBulma(sayilar,boyut);
+        cout << "2 diziyi toplamak istiyorsaniz 1'e istemiyorsaniz herhangi bir sayiya basiniz..." << endl;
+        cin >> karar;
+        cout << "2.dizi icin  Sayilarinizi girebilirsiniz" << endl;
+        if(karar == 1){
+            for (int i = 0;i<boyut;i++){
+        cin >> sayilar2[i];}
+        dizilerinElemaniniGoruntule(sayilar,boyut);
+        dizilerinElemaniniGoruntule(sayilar2,boyut);
+        ikiDiziyiToplama(sayilar,sayilar2,toplam,boyut);
+        dizilerinElemaniniGoruntule(toplam,boyut);
+
+        }
+        else{
+            cout << "Cikis yapiyorsunuz..." << endl;
+        }
+
+
+}

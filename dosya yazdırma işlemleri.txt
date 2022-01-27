@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string.h>
+#include <stdlib.h>
+#include <time.h>
+#include <fstream>
+using namespace std;
+
+int main()
+{
+    ofstream dosya("C:\\Users\\asus\\Desktop\\ogrenciler.txt",std::ios_base::app); // std::ios_base::app yeni yazdırma eklemek için
+    int boyut;
+    cout << "Kac ogrencinin bilgilerini yazmak istiyorsunuz?.." << endl;
+    cin >> boyut;
+    int okulNo[boyut];
+    string isim[boyut];
+    int sinif[boyut];
+    cout << "Lutfen ogrenci bilgilerini giriniz..." << endl;
+    for(int i = 0;i<boyut;i++){
+        cin >> okulNo[i] >> isim[i] >> sinif[i];
+    }
+     for(int i = 0;i<boyut;i++){
+        dosya << okulNo[i] <<" "<< isim[i] << " " << sinif[i] << endl;
+    }
+
+    return 0;
+}
+

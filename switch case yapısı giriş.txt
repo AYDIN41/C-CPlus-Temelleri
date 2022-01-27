@@ -1,0 +1,70 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int haftaninGunu;
+   int mod;
+   cout << "Lutfen ogrenmek istediginiz gunun rakamini yaziniz..." << endl;
+   cin >> haftaninGunu;
+   if(haftaninGunu>7){
+
+        mod = haftaninGunu % 7;
+        /*if(mod == 0){
+            mod++;
+        }*/mod++;
+        switch(mod){
+    case 1:
+        cout << "Pazartesi";
+        break;
+    case 2:
+        cout << "Sali";
+        break;
+    case 3:
+        cout << "Carsamba";
+        break;
+    case 4 :
+        cout << "Persembe";
+        break;
+    case 5 :
+        cout << "Cuma";
+        break;
+    case 6 :
+        cout << "Cumartesi";
+        break;
+    case 7 :
+        cout << "Pazar";
+        break;
+
+        }
+   }else {
+       switch(haftaninGunu){
+            case 1:
+        cout << "Pazartesi";
+        break;
+    case 2:
+        cout << "Sali";
+        break;
+    case 3:
+        cout << "Carsamba";
+        break;
+    case 4 :
+        cout << "Persembe";
+        break;
+    case 5 :
+        cout << "Cuma";
+        break;
+    case 6 :
+        cout << "Cumartesi";
+        break;
+    case 7 :
+        cout << "Pazar";
+        break;
+        default:
+        cout << "Lutfen 0 ve daha az sayilar yazmayin";
+
+       }
+
+   }
+}

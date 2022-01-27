@@ -1,0 +1,25 @@
+#include <iostream>
+#include <string.h>
+#include <stdlib.h>
+#include <time.h>
+#include <fstream>
+using namespace std;
+
+template<class donusTipi>
+
+donusTipi toplama(donusTipi sayi1,donusTipi sayi2){
+        return sayi1+sayi2;
+}
+template<class donusTipi2>
+
+donusTipi2 toplama2(donusTipi2 isim,donusTipi2 isim2){
+        return isim+" "+isim2;
+}
+
+int main()
+{
+   cout << toplama<double>(10.2,77.18784)<<endl;
+   cout << toplama2<string> ("EMirhan","Aydin");
+    return 0;
+}
+

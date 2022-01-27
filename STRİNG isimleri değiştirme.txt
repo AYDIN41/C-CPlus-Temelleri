@@ -1,0 +1,18 @@
+#include <iostream>
+#include <string.h>
+#include <stdlib.h>
+#include <time.h>
+#include <fstream>
+#include <string>
+using namespace std;
+
+
+
+int main()
+{
+    string isim = "Emirhan Aydin";
+    isim.replace(0,7,"BABIKO");
+    cout << isim  << endl;
+
+    return 0;
+}

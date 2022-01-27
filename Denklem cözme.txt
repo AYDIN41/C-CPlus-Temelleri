@@ -1,0 +1,15 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a,b,c,x;
+    int denklem;
+    int denklem2;
+    cout<< "Lutfen denklem degerlerini giriniz: " << endl;
+    cin>>a>>b>>c>>x;
+    denklem = a*x+b;
+    denklem2 = a*(x*x)+b*x+c;
+    cout << "1.dereceden denklem icin : " << denklem << endl << "2.dereceden denklem icin: " << denklem2 << endl;
+}

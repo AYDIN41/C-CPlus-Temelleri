@@ -1,0 +1,68 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int cokluDizi[2][2];
+    int cokluDizi2[2][2];
+    int cokluDizi3[2][2];
+  cout << "Lutfen olusturmak istediginiz 2 lu kumeyi yaziniz..." << endl;
+  for(int i = 0;i<2;i++){
+    for(int j=0;j<2;j++){
+        cin>>cokluDizi[i][j];
+    }}
+    for(int i = 0;i<2;i++){
+    for(int j=0;j<2;j++){
+        cout << "1.kumeniz: " <<j+1<<".elemani  "<< cokluDizi[i][j]<<endl;
+    }}
+
+    for(int i = 0;i<2;i++){
+        for(int j=0;j<2;j++){
+        cin>>cokluDizi2[i][j];
+    }}
+    for(int i = 0;i<2;i++){
+        for(int j=0;j<2;j++){
+            cout << "2.kumeniz: " <<j+1<<".elemani  " << cokluDizi2[i][j]<<endl;
+            }}
+
+    for(int i = 0;i<2;i++){
+        for(int j = 0;j<2;j++){
+            cokluDizi3[i][j] = cokluDizi[i][j] + cokluDizi2[i][j];
+        }
+    }
+    cout << "Girmis oldugunuz kumelerin toplami" <<endl;
+    for(int i =0;i<2;i++){
+        for(int j = 0;j<2;j++){
+            cout << cokluDizi3[i][j] << endl;
+        }
+    }
+
+ /* int cokluDizi[2][2];
+  cout << "Lutfen olusturmak istediginiz 2 lu kumeyi yaziniz..." << endl;
+  for(int i = 0;i<2;i++){
+    for(int j=0;j<2;j++){
+        cin>>cokluDizi[i][j];
+    }}
+    int toplam1=0;
+    for(int i=0;i<1;i++){
+        for(int j=0;j<2;j++){
+            toplam1= toplam1 + cokluDizi[i][j];
+        }
+    }
+    int toplam2=0;
+    for(int i=1;i<2;i++){
+        for(int j=0;j<2;j++){
+            toplam2 += cokluDizi[i][j];
+        }
+    }
+
+
+    for(int i = 0;i<2;i++){
+    for(int j=0;j<2;j++){
+        cout <<cokluDizi[i][j]<<"   ";
+    }cout<<endl;
+    }
+    cout<< "1.Girdiginiz kumelerin toplam degeri: " << toplam1 << endl << "2.Girdiginiz kumelerin toplam degeri: "<< toplam2<< endl;*/
+
+}
